@@ -32,8 +32,8 @@ public class DumpHib extends Configured implements Tool {
 				int imageWidth = value.getWidth();
 				int imageHeight = value.getHeight();
 				String hexHash = ByteUtils.asHex(ByteUtils.FloatArraytoByteArray(value.getData()));
-				String camera = key.getEXIFInformation("Model");
-				String output = imageWidth + "x" + imageHeight + "\t(" + hexHash + ")\t	" + camera;
+				
+				String output = "**INFORMATION: " + imageWidth + "x" + imageHeight + "\t(" + hexHash + ")\t	";
 								
 				context.write(new IntWritable(1), new Text(output));
 			}

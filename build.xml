@@ -2,8 +2,8 @@
 
   <target name="setup">
     <property name="hadoop.home" value="/usr/local/hadoop" /> <!-- location of hadoop installation -->
-    <property name="hadoop.version" value="1.0.1" /> <!-- version of hadoop installation on neighbor -->
-    <property name="hadoop.classpath" value="${hadoop.home}/hadoop-core-${hadoop.version}.jar" />
+    <property name="hadoop.version" value="1.0.1" /> <!-- version of hadoop installation -->
+    <property name="hadoop.classpath" value="${hadoop.home}/hadoop-core-${hadoop.version}.jar" /> <!-- different for later versions -->
     <property name="metadata.jar" value="3rdparty/metadata-extractor-2.3.1.jar" />
   </target>
 
